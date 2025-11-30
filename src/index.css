@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+    --font-family: "Urbanist", sans-serif;
+    --breakpoint-3xl: 1920px;
+    --color-primary: #FF9324; /* 'primery' ko 'primary' kar diya */
+}
+
+@layer base {
+    html {
+        font-family: var(--font-family); /* yaha galat variable tha */
+    }
+    body {
+        background-color: #fcfcfc;
+    }
+}
+.input {
+  @apply w-full bg-slate-900 rounded-lg p-3 border border-slate-700 text-white;
+}
+@media print {
+  body {
+    -webkit-print-color-adjust: exact; /* Chrome/Safari */
+    print-color-adjust: exact;         /* Firefox */
+  }
+
+  .bg-gray-900 { background-color: #1f2937 !important; color: white !important; }
+  .bg-gray-800 { background-color: #1e293b !important; color: white !important; }
+  .text-white { color: white !important; }
+  table { color-adjust: exact; }
+  .shadow-md, .shadow-2xl { box-shadow: none !important; } /* Shadows usually blur in print */
+}
