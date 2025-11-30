@@ -16,7 +16,7 @@ const Home = forwardRef(({ formdata, items }, ref) => {
         <div className="flex flex-col md:flex-row justify-between items-start border-b border-gray-700 pb-4 mb-6">
           <div>
             <h1 className="text-3xl font-bold tracking-wide">TAX INVOICE</h1>
-            <p className="text-gray-400 text-sm mt-1">Amazon Style Invoice</p>
+            <p className="text-gray-400 text-sm mt-1"> Style Invoice</p>
           </div>
           <div className="text-right text-sm mt-3 md:mt-0">
             <p className="text-gray-400 font-semibold">Invoice No:</p>
