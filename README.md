@@ -1,16 +1,86 @@
-# React + Vite
+🧾 Invoice Generator App (React)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and powerful Invoice Generator Application built using React.
+Users can create invoices, add multiple items, automatically calculate totals, download/print invoices, and store data temporarily.
 
-Currently, two official plugins are available:
+🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+(https://profound-cascaron-5d0b7c.netlify.app/)
 
-## React Compiler
+⭐ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+➕ Add unlimited invoice items
 
-## Expanding the ESLint configuration
+📝 Editable item fields (name, qty, price, description)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🔁 Auto-calculated totals & grand total
+
+🖨 Print / Save Invoice as PDF
+
+🗑 Delete items individually
+
+🎨 Clean & responsive UI
+
+🧮 GST / Tax fields (optional)
+
+💾 Local temporary storage
+
+🔄 Reset invoice after saving
+
+🛠 Tech Stack
+
+React
+
+React Hooks
+
+Tailwind CSS / Custom CSS
+
+React-to-print or Browser print feature
+
+Lucide Icons (optional)
+
+📦 Installation & Setup
+
+Clone the repository:
+
+git clone https://github.com/YOUR_USERNAME/INVOICE-GENERATOR
+cd INVOICE-GENERATOR
+
+
+Install dependencies:
+
+npm install
+
+
+Start development:
+
+npm run dev
+
+🧮 How It Works
+1️⃣ Add Items
+
+You can add product/service items with:
+
+Item Name
+
+Quantity
+
+Price
+
+Total auto-calculated
+
+2️⃣ Auto Calculation
+
+The app automatically calculates:
+
+Item Total = qty × price
+
+Subtotal
+
+Tax (if enabled)
+
+Grand Total
+
+3️⃣ Print / Download
+
+Click Save / Print to download the invoice as PDF.
